@@ -22,16 +22,16 @@ export const about = [
 ]
 
 export const skills = [
-"Front-end Development: HTML5, CSS3, JavaScript, React.js, Vue.js",
-"Back-end Development: Node.js, Express.js, Python, Django",
-"Database Management: SQL, MongoDB, Firebase",
-"Responsive Design: Bootstrap, Tailwind CSS, Mobile-First Development",
+"Programming Languages: Java, C, C++, C#, Web API, Python",
+"Front-end Development: HTML5, CSS3, JavaScript, React.js, Vue.js, Angular.js",
+"Back-end Development: Node.js, Express.js, Django",
+"Database Management: SQL, MongoDB, Firebase,Database designs",
+"Responsive Design: Bootstrap, Tailwind CSS",
 "Version Control: Git, GitHub, Bitbucket",
-"UI/UX Design: Figma, Adobe XD, Wireframing, Prototyping",
+"UI/UX Design: Figma, Adobe Illustrator, Adobe Photoshop, Adode InDesign, Adobe XD, Wireframing",
 "API Integration: RESTful APIs, JSON, Axios",
-"Testing and Debugging: Jest, Mocha, Chrome DevTools",
 "Deployment and Hosting: Heroku, Netlify, AWS, Firebase",
-"Agile Methodologies: Scrum, Kanban, Jira",
+"Agile Methodologies: Scrum, Kanban, Jira, SDLC Methodologies",
 ];
 
 // src/data.js
