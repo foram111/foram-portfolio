@@ -39,30 +39,34 @@ export const skills = [
 export const projects = [
   {
     title: "File Fetcher",
-    subtitle: "Technology: Python, Socket Programming, OS networking, Server Binding, Port Access, file fetching algortihm",
-    description:"Engineered File-Fetcher, leveraging socket programming, server binding, and OS networking to establish a secure LAN link for efficient file transmission between client and server networks. Root access is indispensable to execute the procedure, accomplished in a mere 0.6 seconds.",
-    image: "./project-1.jpeg",
+    subtitle: "Technology: Python, Socket Programming, OS networking, Server Binding, Port Access, file fetching algorithm",
+    description: "Engineered File-Fetcher, leveraging socket programming, server binding, and OS networking to establish a secure LAN link for efficient file transmission between client and server networks. Root access is indispensable to execute the procedure, accomplished in a mere 0.6 seconds.",
+    backgroundImage: "url('./project-1.jpeg')", // Use background image URL
     link: "https://reactbootcamp.com",
+    categories: ["PYTHON"]
   },
   {
     title: "Web Page Analyzer",
-    subtitle: "Technology: Java, Jsoup Library, Web Crawler, HTML Parser, HashMapping, Inverted Indexing.nd Python",
-    description:"Constructed a Java-based web search engine utilizing the Jsoup library to fetch and scrutinize HTML pages pertinent to a predefined domain. Integrated a web crawler that recursively traversed links from a seed URL, resulting in an impressive 88% accuracy rate in data retrieval.",
-    image: "./project-2.jpeg",
+    subtitle: "Technology: Java, Jsoup Library, Web Crawler, HTML Parser, HashMapping, Inverted Indexing",
+    description: "Constructed a Java-based web search engine utilizing the Jsoup library to fetch and scrutinize HTML pages pertinent to a predefined domain. Integrated a web crawler that recursively traversed links from a seed URL, resulting in an impressive 88% accuracy rate in data retrieval.",
+    backgroundImage: "url('./project-2.jpeg')", // Use background image URL
     link: "https://reedbarger.com",
+    categories: ["JAVA"]
   },
   {
     title: "Home Office System",
-    subtitle: "Technology: Java, Javascript framework : ReactJs, NodeJs, MongoDB, Raspberry Pi",
-    description:"Deployed voice-controlled office system leveraging Raspberry Pi, driving team achievements, enhancing productivity by 40%, and ensuring comprehensive security through ID verification and fire/smoke alarm integration.",  
-    image: "./project-3.png",
+    subtitle: "Technology: Java, JavaScript framework: ReactJs, NodeJs, MongoDB, Raspberry Pi",
+    description: "Deployed voice-controlled office system leveraging Raspberry Pi, driving team achievements, enhancing productivity by 40%, and ensuring comprehensive security through ID verification and fire/smoke alarm integration.",
+    backgroundImage: "url('./project-3.jpeg')", // Use background image URL
     link: "https://jsbootcamp.com",
+    categories: ["JAVA", "REACT-JS"]
   },
   {
     title: "CPSN- Commercial Hub",
-    subtitle: "Technology: HTML, CSS, Java, JavaScript, jQuery, Ajax, Bootstrap, MongoDB ",
-    description:"Designed and created a responsive website using HTML, CSS, JavaScript, and MongoDB, including GEO-Locations, Google Maps API, dynamic page routing with jQuery and Ajax, and website updates managed with expert Figma skills.", 
-    image: "./project-4.jpeg",
+    subtitle: "Technology: HTML, CSS, Java, JavaScript, jQuery, Ajax, Bootstrap, MongoDB",
+    description: "Designed and created a responsive website using HTML, CSS, JavaScript, and MongoDB, including GEO-Locations, Google Maps API, dynamic page routing with jQuery and Ajax, and website updates managed with expert Figma skills.",
+    backgroundImage: "url('./project-4.jpeg')", // Use background image URL
     link: "https://pythonbootcamp.com",
+    categories: ["JAVASCRIPT"]
   },
 ];

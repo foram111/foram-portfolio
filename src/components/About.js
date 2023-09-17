@@ -1,37 +1,47 @@
 import React from "react";
+import "./front.css"; // Import the CSS file for styling
 
-export default function About() {
+
+export default function AboutUs() {
   return (
-    <section id="about">
-      <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-            Hi, I'm Foram.
-            <br className="hidden lg:inline-block" />Designer and Frontend Developer 
-          </h1>
-          <p className="mb-8 leading-relaxed">
-          "Bridging the gap between design and functionality."
-          </p>
-          <div className="flex justify-center">
-            <a
-              href="https://www.behance.net/foramgohil"
-              className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
-              My Design Projects
-            </a>
-            <a
-              href="#projects"
-              className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
-              My Coding projects
-            </a>
-            
+    <section id="about-us" className="bg-gray-900 py-20">
+      <div className="container mx-auto text-center">
+        <h2 className="text-3xl text-white font-semibold mb-4">
+          ABOUT ME
+        </h2>
+        <p className="text-gray-400 text-lg mb-4">
+          I'm a passionate designer and web developer with years of experience.
+          I specialize in creating captivating designs and seamless user experiences.
+          My journey started as a freelancer, collaborating with clients from various industries.
+          I've tackled design challenges, consulted with startups, and delivered digital solutions.
+        </p>
+        <p className="text-lg leading-relaxed mb-8">
+          Whether it's translating ideas into stunning visuals or developing interactive websites,
+          I bring creativity and professionalism to every project.
+        </p>
+    
+        
+        <div className="hexagon-container">
+          <div className="hexagon">
+            <div className="hexagon-border"></div>
+            <div className="hexagon-inner"></div>
           </div>
-        </div>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          <img
-            className="object-cover object-center rounded"
-            alt="hero"
-            src="./mainimg.png"
-          />
+          <div className="hexagon">
+            <div className="hexagon-border"></div>
+            <div className="hexagon-inner"></div>
+          </div>
+          <div className="hexagon">
+            <div className="hexagon-border"></div>
+            <div className="hexagon-inner"></div>
+          </div>
+          <div className="hexagon">
+            <div className="hexagon-border"></div>
+            <div className="hexagon-inner"></div>
+          </div>
+          <div className="hexagon">
+            <div className="hexagon-border"></div>
+            <div className="hexagon-inner"></div>
+          </div>
         </div>
       </div>
     </section>
