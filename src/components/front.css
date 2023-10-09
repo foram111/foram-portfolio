@@ -24,6 +24,50 @@
   z-index: 1;
 }
 
+/* Add these styles to your CSS file */
+
+/* Style for the full-screen background */
+/* Add these styles to your CSS file */
+
+/* Style for the full-screen background */
+/* Add these styles to your CSS file */
+
+/* Style for the full-screen background */
+.background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -100%; /* Start the background off the screen to the left */
+  width: 100%; /* Set the width to 100% of viewport width */
+  height: 100%; /* Set the height to 100% of viewport height */
+  background-color: #EA6572; /* Color code for the background */
+  transition: left 1s ease; /* Smooth slide-in animation */
+}
+
+/* Animation for the background slide-in */
+.background.slide-in {
+  left: 0; /* Slide in from the left to cover the entire viewport */
+}
+
+/* Style for the other text */
+.title-font {
+  color: white; /* Set text color to white */
+}
+
+.subtitle {
+  color: white; /* Set text color to white */
+}
+
+/* Style for the "Hello!" text */
+.title-font .name-text {
+  font-size: 24px; /* You can adjust the font size as needed */
+  
+  color: white; /* You can adjust the text color as needed */
+  padding: 5px 10px; /* Add some padding to create space around the text */
+  border-radius: 5px; /* Add rounded corners to the background */
+}
+
+
 .title-font {
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -52,9 +96,9 @@
 /* Style the outline button */
 .outline-button {
   padding: 10px 40px;
-  border: 1px solid #ff679f; /* Outline color */
+  border: 1px solid #ffffff; /* Outline color */
   background-color: transparent;
-  color: #ff679f; /* Text color */
+  color: #ffffff; /* Text color */
   font-size: 1.2rem;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
@@ -68,57 +112,48 @@
   color: #fff; /* Text color on hover */
 }
 
+/* Add these styles to your CSS file */
 
-/*abot us css*/
-#about-us{
-
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Style for the "Hello!" text */
+.title-font .name-text {
+  font-size: 90px; /* You can adjust the font size as needed */
+  color: #EA6572; /* You can adjust the text color as needed */
+  padding: 5px 10px; /* Add some padding to create space around the text */
+  border-radius: 5px; /* Add rounded corners to the background */
 }
-/* AboutUs.css */
-.hexagon-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
+/* Add these styles to your CSS file */
 
-/* AboutUs.css */
-.hexagon {
-  width: 150px;
-  height: 150px;
-  position: relative;
-  margin: 1rem;
-}
-
-.hexagon-inner {
-  width: 100%;
-  padding-top: 115.47%; /* (sqrt(3)/2) * 100% = 115.47% */
-  background-color: #00ffff; /* Change the background color as needed */
+/* Style for the arrow */
+.arrow {
   position: absolute;
-  top: 0;
-  left: 0;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 80px;
+  opacity: 0; /* Initially, make the arrow invisible */
+  transition: opacity 0.5s ease-in-out; /* Smooth fade-in and fade-out */
 }
 
-.hexagon-border {
-  width: 100%;
-  padding-top: 115.47%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  clip-path: polygon(50% 0%, 90% 20%, 90% 80%, 50% 100%, 10% 80%, 10% 20%);
-  border: 5px solid #fff; /* Change the border color and size as needed */
+/* Animation for blinking arrow */
+.arrow.blink {
+  animation: blink-animation 1s infinite; /* Blinking animation */
 }
 
-/* Add more styles for text or other elements inside the hexagons if needed */
-
-.hexagon:hover .hexagon-inner {
-  transform: rotate(60deg);
-  transform-origin: center;
-  transition: transform 0.3s ease;
+/* Keyframes for blinking animation */
+@keyframes blink-animation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
+
+
+/* Update the hexagon-heading styles */
 
 /* Body font family and default font size */
 body {
@@ -137,7 +172,6 @@ body {
 }
 
 /* Paragraph font size */
-
 
 /* Links font size and color */
 
@@ -159,12 +193,10 @@ body {
 
 /* Add more styles for text or other elements inside the hexagons if needed */
 
-
-/*projects css*/
+/* projects css
 
 /* Project Card Styles */
-/* Project Card Styles */
-.project-card {
+/* .project-card {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -173,11 +205,85 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 150px; /* Adjust the card width as needed */
-  height: 150px; /* Adjust the card height as needed */
-}
+  width: 150px; /* Adjust the card width as needed 
+  height: 150px; Adjust the card height as needed
+}*/
 
-.project-card:hover {
+/* .project-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+} */ */
+
+/* Add more styles for text or other elements inside the hexagons if needed */
+
+/* AboutUs.css */
+
+.hexagon-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
+
+.hexagon {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  margin: 1rem;
+  transition: transform 0.3s ease;
+}
+
+
+
+.hexagon-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow hexagons to wrap to the next line if necessary */
+}
+
+/* Style for the pink hexagons */
+.pink-hexagon {
+  /* background-color: #EA6572; Pink color */
+  color: white; /* Text color */
+  margin: 10px; /* Adjust the spacing between hexagons as needed */
+}
+
+/* AboutUs.css */
+/* AboutUs.css */
+/* AboutUs.css */
+
+.hexagon-border {
+width: 100%;
+  padding-top: 120.47%; /* (sqrt(3)/2) * 100% = 115.47% */
+  background-color: #EA6572; /* Change the background color as needed */
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  border: 1px solid white;
+  padding-top: 115.47%; 
+}
+
+
+/* Hexagon hover effect */
+.hexagon:hover {
+  transform: rotate(60deg);
+}
+
+/* Update the hexagon-heading styles */
+.hexagon-heading {
+  font-size: 1.2rem; /* Adjust the font size as needed */
+  color: #000000; /* Set the text color */
+  text-align: center; /* Center the text horizontally */
+  margin: 0; /* Remove any default margins if necessary */
+  padding: 0.5rem; /* Add padding around the heading */
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the heading perfectly */
+}
+
+/* ... (rest of your CSS) */

@@ -1,4 +1,4 @@
-
+import "./media/project-1.jpeg"
 export const testimonials = [
   {
     quote:
@@ -41,7 +41,7 @@ export const projects = [
     title: "File Fetcher",
     subtitle: "Technology: Python, Socket Programming, OS networking, Server Binding, Port Access, file fetching algorithm",
     description: "Engineered File-Fetcher, leveraging socket programming, server binding, and OS networking to establish a secure LAN link for efficient file transmission between client and server networks. Root access is indispensable to execute the procedure, accomplished in a mere 0.6 seconds.",
-    backgroundImage: "url('./project-1.jpeg')", // Use background image URL
+    backgroundImage: "url('./media/project-1.jpeg')", // Use background image URL
     link: "https://reactbootcamp.com",
     categories: ["PYTHON"]
   },
